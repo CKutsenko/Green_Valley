@@ -3,6 +3,7 @@ build/css
 build/img
 build/js
 build/*.html
+_design
 
 .Saved/
 _arc/

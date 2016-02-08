@@ -1,0 +1,27 @@
+.btn {
+  font-family: @fira-sans;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 32px;
+  background-color: @orange;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: ease-in-out all 500ms;
+
+  &:hover{
+    background-color: @dark-orange;
+  }
+
+  &--icon-calendar {
+    padding-left: 50px;
+    position: relative;
+  }
+
+  &--icon-calendar:before {
+    position: absolute;
+    content: '';
+    background-image: url(../../img/calendar.svg);
+  }
+}
