@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Список Номеров</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- HEADER -->
+
+
+    @@include('_html_inc/page_header.html')
+
+
+    <!-- MAIN -->
+
+    <main>
+
+      <article class="rooms">
+      <div class="container">
+      <div class="rooms__header align-center">
+        <h1 class="rooms__header-title">Номера в отеле Green Value</h1>
+        <p class="rooms__header-discription hidden-xs">Комфорт и живописный вид на финский залив и сосновый парк.
+          <br/>4 этажа | 70 номеров</p>
+          </div>
+         </div>
+
+
+        <section class="room-categories">
+          <div class="container">
+
+            <h2 class="room-categories__title align-center">Категории</h2>
+            <div class="room-categories__list">
+              <div class="row">
+
+              <!-- ECONOM -->
+
+              <div class="col-xs-12">
+              <div class="row">
+                <section class="room-categories__card">
+                  <div class="categories-info align-center col-xs-12">
+                    <p class="categories-info__title">Эконом</p>
+                    <p class="categories-info__cost">от <span>3400</span> руб./сутки</p>
+                  </div>
+                  <div class="room-categories__img col-xs-12">
+                    <img src="img/rooms__economy.jpg" alt="">
+                  </div>
+                  <div class="categories-discription">
+                  <div class="col-xs-12">
+                    <p class="categories-info__text">В отеле 30 таких номеров площадью от 16 до 20 кв. м. Рассчитаны на проживание 1-2 человек. Часть номеров с видом на Финский залив.</p>
+                    </div>
+                    <div class="col-xs-6">
+                    <a href="" class="btn">Забронировать</a>
+                    </div>
+                    <div class="col-xs-6">
+                    <a href="" class="btn btn--dotted">Подробнее</a>
+                    </div>
+                  </div>
+                </section>
+                </div>
+              </div>
+
+              <!-- STANDART -->
+
+              <div class="col-xs-12">
+                <section class="room-categories__card">
+                  <div class="categories-info align-center">
+                    <p class="categories-info__title">Стандарт</p>
+                    <p class="categories-info__sum">от <span>4000</span> руб./сутки</p>
+                  </div>
+                  <div class="room-categories__img">
+                    <img src="img/rooms__standart.jpg" alt="">
+                  </div>
+                  <div class="categories-discription">
+                    <p class="categories-info__text">В отеле 20 таких номеров. Рассчитаны на проживание 2-3 человек. Площадь 20-25 кв. м., состоит и гостевой и спальной зоны.</p>
+                    <a href="" class="btn">Забронировать</a>
+                    <a href="" class="btn btn--dotted">Подробнее</a>
+                  </div>
+                </section>
+              </div>
+
+              <!-- STANDART+ -->
+
+              <section class="room-categories__card">
+              <div class="col-xs-12">
+              <div class="row">
+
+                  <div class="col-xs-12 align-center">
+                    <p class="categories-info__title">Стандарт+</p>
+                    <p class="categories-info__sum">от <span>4500</span> руб./сутки</p>
+                  </div>
+                  <div class="col-xs-12 room-categories__img">
+                    <img src="img/rooms__standart-plus.jpg" alt="">
+                  </div>
+                  <div class="col-xs-12 categories-discription">
+                    <p class="categories-info__text">В отеле 15 таких номеров, 2-комнатный номер предназначен для проживания 2-4 человек. Площадь номера от 35 кв. м.</p>
+                    <a href="" class="btn">Забронировать</a>
+                    <a href="" class="btn btn--dotted">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              </section>
+
+              <!-- LUX -->
+
+              <div class="col-xs-12">
+                <section class="room-categories__card">
+                  <div class="categories-info align-center">
+                    <p class="categories-info__title">Люкс</p>
+                    <p class="categories-info__sum">от <span>5700</span> руб./сутки</p>
+                  </div>
+                  <div class="room-categories__img">
+                    <img src="img/rooms__lux.jpg" alt="">
+                  </div>
+                  <div class="categories-discription">
+                    <p class="categories-info__text">В отеле 5 таких номеров. Просторные номера площадью до 40 кв. м. с видом на Финский залив, выполнен в оригинальном стиое.</p>
+                    <a href="" class="btn">Забронировать</a>
+                    <a href="" class="btn btn--dotted">Подробнее</a>
+                  </div>
+                </section>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- FOOTER -->
+
+    @@include('_html_inc/page_footer.html')
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
