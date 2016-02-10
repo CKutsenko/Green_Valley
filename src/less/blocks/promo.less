@@ -1,0 +1,66 @@
+.promo {
+
+  min-height: 320px;
+  background-image: url(../../img/promo-slider__bg.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+  padding-top: 20px;
+
+    @media (min-width: @screen-sm) {
+      min-height: 500px;
+      padding-top: 90px;
+   }
+
+  .container {
+    justify-content: flex-start;
+    padding: 0 25px;
+    background-color: rgba(251, 253, 251, 0.9);
+
+      @media (min-width: @screen-sm){
+        background-color: transparent;
+      }
+    }
+
+    &__slide-inner{
+      font-family: @fira-sans;
+      font-size: @font-size-base + 2px;
+      line-height: 1.4;
+      color: @gray-darker;
+      font-weight: 300;
+    }
+
+    &__item-title {
+      font-size: @font-size-base + 4px;
+      line-height: 24px;
+      font-family: @serif-caption;
+      margin-bottom: 25px;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 0;
+
+        @media (min-width: @screen-sm) {
+          font-size: @font-size-base + 24px;
+          line-height: 42px;
+          text-align: left;
+          margin-bottom: 24px;
+
+            span  {
+              background-color: rgba(251, 253, 251, 0.9);
+              padding: 0px 11px 0px 7px;
+            }
+          }
+        }
+
+    &__item-text{
+      text-align: center;
+
+    @media (min-width: @screen-sm) {
+      line-height: 22px;
+      text-align: left;
+
+    span {
+      background-color: rgba(251, 253, 251, 0.9);
+      padding: 5px 10px 4px 13px;}
+    }
+  }
+}
