@@ -3,12 +3,16 @@
     padding: 40px 0 35px;
 
     &__title {
-    font-size: @font-size-base + 16px;
-    font-family: @serif-caption;
-    color: @gray-lighter;
-    font-weight: normal;
-    margin-bottom: 30px;
-    margin-top: 0;
+      font-size: @font-size-base + 10px;
+      font-family: @serif-caption;
+      color: @gray-lighter;
+      font-weight: normal;
+      margin-bottom: 30px;
+      margin-top: 0;
+
+    @media (min-width: @screen-lg) {
+      font-size: @font-size-base + 16px;
+      }
     }
 
     .row {;
