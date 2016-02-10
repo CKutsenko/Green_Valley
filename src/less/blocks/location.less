@@ -1,0 +1,63 @@
+.location {
+
+  color: @gray-darker;
+  margin-bottom: 70px;
+
+  .row {
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: @font-size-base + 12px;
+    font-family: @serif-caption;
+    margin-bottom: 35px;
+  }
+}
+
+.transport {
+  &__title {
+    font-size: @font-size-base;
+    text-transform: uppercase;
+    line-height: 24px;
+    position: relative;
+    margin-bottom: 5px;
+    padding-top: 40px;
+    position: relative;
+
+    &:before {
+    content: '';
+    width: 50px;
+    height: 29px;
+    background-image: url(../../img/our-location__bus-icon.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translate(-50%);
+    }
+
+    &--train:before {
+      width: 58px;
+      height: 26px;
+      top: 1px;
+      background-image: url(../../img/our-location__train-icon.png);
+    }
+  }
+
+  &__routes-list {
+    text-align: center;
+
+    @media (min-width: @screen-lg) {
+      text-align: left;
+    }
+  }
+
+  &__routes-item {
+    font-size: @font-size-base + 2px;
+    line-height: 1.4;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
