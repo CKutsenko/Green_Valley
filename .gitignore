@@ -16,6 +16,5 @@ node_modules/
 *.txt
 *.zip
 .idea
-css/*.css
 ex_files
 Thumbs.db

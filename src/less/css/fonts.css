@@ -1,9 +1,6 @@
 @font-face {
-    font-family: "FiraSans";
-    src: url("../fonts/FiraSansRegular.eot");
-    src: url("../fonts/FiraSansRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/FiraSansRegular.woff") format("woff"),
-    url("../fonts/FiraSansRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: 'FiraSans';
+  src: url("../fonts/FiraSans-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
 }
