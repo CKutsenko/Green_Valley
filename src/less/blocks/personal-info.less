@@ -1,0 +1,54 @@
+.personal-info {
+  padding: 50px 0;
+  text-align: center;
+
+  &__contant {
+    margin: 0 auto;
+  }
+
+  &__step {
+    text-transform: uppercase;
+    color: @gray;
+    margin: 0;
+    margin-bottom: 3px;
+  }
+
+  &__title {
+    font-family: @serif-caption;
+    color: @gray-darker;
+    font-weight: normal;
+    font-size: @font-size-base +12px;
+    margin: 0 0 30px 0;
+
+    @media (min-width: @screen-lg) {
+      font-size: @font-size-base + 16px;
+    }
+  }
+
+  &__form {
+    width: 66%;
+    display: inline-block;
+  }
+
+  &__input-wrapper {
+    width: 47%;
+    float: left;
+    margin: 10px;
+
+    input {
+    outline: none;
+    background: none;
+    color: @gray-darker;
+    text-transform: uppercase;
+    width: 100%;
+    border: 1px solid @gray-light;
+    padding: 12px 9px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    label {
+      text-align: left;
+    }
+  }
+}
