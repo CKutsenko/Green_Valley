@@ -1,0 +1,90 @@
+.rest-date {
+  padding: 50px 0;
+  background-color: @gray-lighter;
+  text-align: center;
+
+  &__contant {
+    margin: 0 auto;
+  }
+
+  &__step {
+    text-transform: uppercase;
+    color: @gray;
+    margin: 0;
+    margin-bottom: 3px;
+  }
+
+  &__title {
+    font-family: @serif-caption;
+    color: @gray-darker;
+    font-weight: normal;
+    font-size: @font-size-base +12px;
+    margin: 0 0 30px 0;
+
+    @media (min-width: @screen-lg) {
+      font-size: @font-size-base + 16px;
+    }
+  }
+
+  &__choice {
+    background: @white;
+    border: 1px solid @gray-light;
+    padding: 25px 20px;
+    display: inline-block;
+  }
+
+  &__check,
+  &__departure {
+    padding: 25px 20px;
+    position: relative;
+
+    label {
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 65px;
+      left: 0;
+      right: 0;
+    }
+
+    input {
+      width: 45px;
+      height: 28px;
+      outline: none;
+      background: none;
+      line-height: 18px;
+      font-family: 'Fira Sans';
+      text-transform: uppercase;
+      color: #0ab89d;
+      border: 1px solid #ebebeb;
+      font-weight: 500;
+      padding: 5px 10px;
+      text-align: center;
+      background-color: #fff;
+    }
+  }
+
+  &__check {
+    border-right: 1px solid @gray-light;
+  }
+}
+
+::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: @gray-light;
+  font-size: @font-size-base;
+}
+::-moz-placeholder {
+  text-transform: uppercase;
+  color: @gray-light;
+  font-size: @font-size-base;
+}
+:-moz-placeholder {
+  text-transform: uppercase;
+  color: @gray-light;
+  font-size: @font-size-base;
+}
+:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: @gray-light;
+  font-size: @font-size-base;
+}
