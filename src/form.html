@@ -1,290 +1,282 @@
-  <!DOCTYPE html>
-  <html lang="ru">
-    <head>
-      <meta charset="UTF-8">
-      <title>Форма</title>
-      <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
 
-      <!-- HEADER -->
-
-
-      @@include('_html_inc/page_header.html')
+    <!-- HEADER -->
 
 
-      <main>
+    @@include('_html_inc/page_header.html')
 
-        <!-- BOOKING -->
 
-        <section class="booking">
+    <main>
+
+      <!-- BOOKING -->
+
+      <section class="booking">
+        <div class="container">
+        <div class="booking__inner">
+          <div class="booking__contant">
+          <h1 class="booking__title">Бронирование</h1>
+          <p class="booking__information">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <b class="booking__phone-number">+7 812 777-55-88</b></p>
+        </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- STEP #1 -->
+
+      <form action="" class="main-form">
+        <section class="rest-date">
           <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <h1 class="booking__title">Бронирование</h1>
-                <p class="booking__information">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <b class="booking__phone-number">+7 812 777-55-88</b></p>
+
+            <p class="rest-date__step">Шаг 1</p>
+            <h1 class="rest-date__title">Дата отдыха</h1>
+
+            <div class="rest-date__choice">
+
+              <div class="rest-date__check">
+                <label for="check-date">Дата въезда</label><br/>
+                <input type="text"name="check-date" placeholder="дд">
+                <input type="text" name="check-date" placeholder="мм">
+                <input type="text" name="check-date" placeholder="гггг">
+              </div>
+
+
+
+              <div class="rest-datet__departure">
+                <label for="departure-date">Дата выезда</label><br/>
+                <input type="text"name="departure-date" placeholder="дд">
+                <input type="text" name="departure-date" placeholder="мм">
+                <input type="text" name="departure-date" placeholder="гггг">
               </div>
             </div>
           </div>
         </section>
 
-        <!-- STEP #1 -->
+        <!-- STEP #2 -->
 
-        <form action="" class="main-form">
-          <section class="rest-date">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12">
-                  <p class="rest-date__step">Шаг 1</p>
-                  <h1 class="rest-date__title">Дата отдыха</h1>
-                </div>
-                <div class="rest-date__choice">
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="rest-date__check">
-                      <label for="check-date">Дата въезда</label><br/>
-                      <input type="text"name="check-date" placeholder="дд">
-                      <input type="text" name="check-date" placeholder="мм">
-                      <input type="text" name="check-date" placeholder="гггг">
-                    </div>
-                  </div>
+        <section class="locations">
+          <div class="container">
 
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="rest-datet__departure">
-                      <label for="departure-date">Дата выезда</label><br/>
-                      <input type="text"name="departure-date" placeholder="дд">
-                      <input type="text" name="departure-date" placeholder="мм">
-                      <input type="text" name="departure-date" placeholder="гггг">
+            <p class="locations__step">Шаг 2</p>
+            <h2 class="locations__title">Место проживания</h2>
+
+
+
+            <ul class="locations__list">
+
+              <li class="locations__item">
+                <label for="hotel">
+                  <input type="radio" checked name="locations_hotel">
+                  <span class="locations__item--text">Отель</span>
+                </label>
+              </li>
+
+              <li class="locations__item">
+                <label for="cottage">
+                  <input type="radio" name="locations_cottage">
+                  <span class="locationg__item--text">Коттедж</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- STEP #3 -->
+
+        <section class="cottege-type">
+          <div class="container">
+
+            <p class="cottege-type__step">Шаг 3</p>
+            <h2 class="cottege-type__title">Тип коттеджа</h2>
+
+            <div class="cottege-type__list-wrapper">
+
+              <ul class="cottege-type__list">
+
+                <li class="cottege-type__item">
+                  <label for="cottage-flagship">
+                    <input type="radio">
+                    <span class="cottege-type__item-text">Флагман</span>
+                    <div class="row hidden-xs">
+                      <div class="col-sm-12">
+                        <div class="cottege-type__features-wrapper">
+                          <ul class="cottege-type__features">
+                            <li class="cottege-type__feature">Площадь 100м<sup>2</sup></li>
+                            <li class="cottege-type__feature">3 комнаты</li>
+                            <li class="cottege-type__feature">5 спальных мест</li>
+                            <li class="cottege-type__feature">Раздельный санузел</li>
+                            <li class="cottege-type__feature">wi-fi</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </label>
+                </li>
+
+                <li class="cottege-type__item">
+                  <label for="cottage-laky">
+                    <input type="radio">
+                    <span class="cottege-type__item-text">Озерный</span>
+                    <div class="row hidden-xs">
+                      <div class="col-sm-12">
+                        <div class="cottege-type__features-wrapper">
+                          <ul class="cottege-type__features">
+                            <li class="cottege-type__feature">Площадь 220м<sup>2</sup></li>
+                            <li class="cottege-type__feature">6 комнат</li>
+                            <li class="cottege-type__feature">7 спальных мест</li>
+                            <li class="cottege-type__feature">2 раздельных санузла</li>
+                            <li class="cottege-type__feature">wi-fi</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </li>
+
+                <li class="cottege-type__item">
+                  <label for="cottage-alder">
+                    <input type="radio">
+                    <span class="cottege-type__item-text">Портовый</span>
+                    <div class="row hidden-xs">
+                      <div class="col-sm-12">
+                        <div class="cottege-type__features-wrapper">
+                          <ul class="cottege-type__features">
+                            <li class="cottege-type__feature">Площадь 50м<sup>2</sup></li>
+                            <li class="cottege-type__feature">2 комнаты</li>
+                            <li class="cottege-type__feature">3 спальных места</li>
+                            <li class="cottege-type__feature">Совмещенный санузел</li>
+                            <li class="cottege-type__feature">wi-fi</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </li>
+
+                <li class="cottege-type__item">
+                  <label for="cottage-port">
+                    <input type="radio">
+                    <span class="cottege-type__item-text">Ольховка</span>
+                    <div class="row hidden-xs">
+                      <div class="col-sm-12">
+                        <div class="cottege-type__features-wrapper">
+                          <ul class="cottege-type__features">
+                            <li class="cottege-type__feature">Площадь 150м<sup>2</sup></li>
+                            <li class="cottege-type__feature">4 комнаты</li>
+                            <li class="cottege-type__feature">5 спальных мест</li>
+                            <li class="cottege-type__feature">Раздельный санузел</li>
+                            <li class="cottege-type__feature">wi-fi</li>
+                          </ul>
+                        </div>
+                      </div>
+                      </label>
+                    </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- STEP #4 -->
+
+        <section class="personal-info">
+          <div class="container">
+
+            <p class="personal-info__step">Шаг 4</p>
+            <h2 class="personal-info__title">Персональная информация</h2>
+            <div class="personal-info__form">
+              <div class="personal-info__input-wrapper">
+                <input type="text" placeholder="имя">
+              </div>
+              <div class="personal-info__input-wrapper">
+                <input type="text" placeholder="фамилия">
+              </div>
+              <div class="personal-info__input-wrapper">
+                <input type="number" name="phone-number" placeholder="номер телефона">
+                <label for="phone-number">Мы свяжемся с вами в случае необходимости.</label>
+              </div>
+              <div class="personal-info__input-wrapper">
+                <input type="email" name="e-mail" placeholder="e-mail">
+                <label for="e-mail">На этот адрес мы вышлем вам подтверждение о забронированном номере.</label>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <!-- STEP #2 -->
+        <!-- STEP #5 -->
 
-          <section class="locations">
-            <div class="container">
-              <div class="col-xs-12">
-                <p class="locations__step">Шаг 2</p>
-                <h2 class="locations__title">Место проживания</h2>
+        <section class="payment">
+          <div class="container">
+            <p class="payment__step">Шаг 5</p>
+            <h3 class="payment__title">Способ оплаты</h3>
+            <div class="payment__form-wrapper">
+
+              <div class="payment-cost">
+                <p class="payment-cost__title">к оплате</p>
+                <p class="payment-cost__sum"></p>
+                <p class="payment-cost__warning">Пожалуйста, <span>выберите дату</span> выезда и въезда, чтобы увидеть сумму к оплате</p>
               </div>
+            </div>
 
-              <div class="col-xs-12">
-                <ul class="locations__list">
+            <div class="payment__form">
+              <div class="payment-type">
 
-                  <li class="locations__item">
-                    <label for="hotel">
-                      <input type="radio" checked name="locations_hotel">
-                      <span class="locations__item--text">Отель</span>
+                <div class="payment-on-arrival">
+                  <div class="payment-on-arrival__explanation">
+                    <label for="payment-on-arrival">
+                      <input type="radio">
+                      <span class="payment-on-arrival__choose">по приезду</span>
                     </label>
-                  </li>
+                    <p class="payment-on-arrival__text">Вы можете произвести оплату по факту заселения.</p>
+                  </div>
+                </div>
 
-                  <li class="locations__item">
-                    <label for="cottage">
-                      <input type="radio" name="locations_cottage">
-                      <span class="locationg__item--text">Коттедж</span>
+                <div class="payment-now">
+                  <div class="payment-now__explanation">
+                    <label for="payment-now">
+                      <input type="radio">
+                      <span class="payment-now__choose">сейчас</span>
                     </label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <!-- STEP #3 -->
-
-          <section class="cottege-type">
-            <div class="container">
-              <div class="col-xs-12">
-                <p class="cottege-type__step">Шаг 3</p>
-                <h2 class="cottege-type__title">Тип коттеджа</h2>
-              </div>
-              <div class="cottege-type__list-wrapper">
-
-                <div class="col-xs-12">
-                  <ul class="cottege-type__list">
-
-                    <li class="cottege-type__item">
-                      <label for="cottage-flagship">
-                        <input type="radio">
-                        <span class="cottege-type__item-text">Флагман</span>
-                        <div class="row hidden-xs">
-                          <div class="col-sm-12">
-                            <div class="cottege-type__features-wrapper">
-                              <ul class="cottege-type__features">
-                                <li class="cottege-type__feature">Площадь 100м<sup>2</sup></li>
-                                <li class="cottege-type__feature">3 комнаты</li>
-                                <li class="cottege-type__feature">5 спальных мест</li>
-                                <li class="cottege-type__feature">Раздельный санузел</li>
-                                <li class="cottege-type__feature">wi-fi</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </label>
-                    </li>
-
-                    <li class="cottege-type__item">
-                      <label for="cottage-laky">
-                        <input type="radio">
-                        <span class="cottege-type__item-text">Озерный</span>
-                        <div class="row hidden-xs">
-                          <div class="col-sm-12">
-                            <div class="cottege-type__features-wrapper">
-                              <ul class="cottege-type__features">
-                                <li class="cottege-type__feature">Площадь 220м<sup>2</sup></li>
-                                <li class="cottege-type__feature">6 комнат</li>
-                                <li class="cottege-type__feature">7 спальных мест</li>
-                                <li class="cottege-type__feature">2 раздельных санузла</li>
-                                <li class="cottege-type__feature">wi-fi</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </label>
-                    </li>
-
-                    <li class="cottege-type__item">
-                      <label for="cottage-alder">
-                        <input type="radio">
-                        <span class="cottege-type__item-text">Портовый</span>
-                        <div class="row hidden-xs">
-                          <div class="col-sm-12">
-                            <div class="cottege-type__features-wrapper">
-                              <ul class="cottege-type__features">
-                                <li class="cottege-type__feature">Площадь 50м<sup>2</sup></li>
-                                <li class="cottege-type__feature">2 комнаты</li>
-                                <li class="cottege-type__feature">3 спальных места</li>
-                                <li class="cottege-type__feature">Совмещенный санузел</li>
-                                <li class="cottege-type__feature">wi-fi</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </label>
-                    </li>
-
-                    <li class="cottege-type__item">
-                      <label for="cottage-port">
-                        <input type="radio">
-                        <span class="cottege-type__item-text">Ольховка</span>
-                        <div class="row hidden-xs">
-                          <div class="col-sm-12">
-                            <div class="cottege-type__features-wrapper">
-                              <ul class="cottege-type__features">
-                                <li class="cottege-type__feature">Площадь 150м<sup>2</sup></li>
-                                <li class="cottege-type__feature">4 комнаты</li>
-                                <li class="cottege-type__feature">5 спальных мест</li>
-                                <li class="cottege-type__feature">Раздельный санузел</li>
-                                <li class="cottege-type__feature">wi-fi</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </label>
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- STEP #4 -->
-
-          <section class="personal-info">
-            <div class="container">
-              <!-- <div class="row"> -->
-                <!-- <div class="col-xs-12"> -->
-                  <p class="personal-info__step">Шаг 4</p>
-                  <h2 class="personal-info__title">Персональная информация</h2>
-               <!--  </div> -->
-                <!-- <div class="col-xs-12"> -->
-                  <div class="personal-info__form">
-                    <div class="personal-info__input-wrapper">
-                      <input type="text" placeholder="имя">
-                    </div>
-                    <div class="personal-info__input-wrapper">
-                      <input type="text" placeholder="фамилия">
-                    </div>
-                    <div class="personal-info__input-wrapper">
-                      <input type="number" name="phone-number" placeholder="номер телефона">
-                      <label for="phone-number">Мы свяжемся с вами в случае необходимости.</label>
-                    </div>
-                    <div class="personal-info__input-wrapper">
-                      <input type="email" name="e-mail" placeholder="e-mail">
-                      <label for="e-mail">На этот адрес мы вышлем вам подтверждение о забронированном номере.</label>
-                   <!--  </div> -->
-                  <!-- </div> -->
-                <!-- </div> -->
-              </div>
-            </div>
-          </section>
-
-          <!-- STEP #5 -->
-
-          <section class="payment">
-            <div class="container">
-              <p class="payment__step">Шаг 5</p>
-              <h3 class="payment__title">Способ оплаты</h3>
-              <div class="payment__form-wrapper">
-                <div class="payment__form">
-                  <div class="payment-type">
-
-                    <div class="payment-on-arrival">
-                      <div class="payment-on-arrival__explanation">
-                        <label for="payment-on-arrival">
-                          <input type="radio">
-                          <span class="payment-on-arrival__choose">по приезду</span>
-                        </label>
-                        <p class="payment-on-arrival__text">Вы можете произвести оплату по факту заселения.</p>
-                      </div>
-                    </div>
-
-                    <div class="payment-now">
-                      <div class="payment-now__explanation">
-                        <label for="payment-now">
-                          <input type="radio">
-                          <span class="payment-now__choose">сейчас</span>
-                        </label>
-                        <p class="payment-now__text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
-                      </div>
-
-                      <div class="payment-now__form">
-
-                        <label for="card-number">номер карты</label>
-                        <input type="text" placeholder="0000 0000 0000 0000">
-                        <label for="last-name">фамилия владельца карты</label>
-                        <input type="text" placeholder="vladimir vladimirovich">
-
-                        <label for="cvv">код cvv</label>
-                        <input type="text" placeholder="123">
-                        <label for="valid-until">действует до</label>
-                        <input type="text" placeholder="01/2018">
-
-                      </div>
-                    </div>
+                    <p class="payment-now__text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
                   </div>
-                  <div class="payment-cost">
-                    <p class="payment-cost__title">к оплате</p>
-                    <p class="payment-cost__sum"></p>
-                    <p class="payment-cost__warning">Пожалуйста, <span>выберите дату</span> выезда и въезда, чтобы увидеть сумму к оплате</p>
+
+                  <div class="payment-now__form">
+
+                    <label for="card-number">номер карты</label>
+                    <input type="text" placeholder="0000 0000 0000 0000">
+                    <label for="last-name">фамилия владельца карты</label>
+                    <input type="text" placeholder="vladimir vladimirovich">
+
+                    <label for="cvv">код cvv</label>
+                    <input type="text" placeholder="123">
+                    <label for="valid-until">действует до</label>
+                    <input type="text" placeholder="01/2018">
+
                   </div>
                 </div>
-                <a class="btn__green--wade">Забронировать</a>
               </div>
+
+              <a class="btn__green--wade">Забронировать</a>
             </div>
-          </section>
-        </form>
+          </div>
+        </section>
+      </form>
 
-      </main>
+    </main>
 
-      <!-- fOOTER -->
+    <!-- fOOTER -->
 
-      @@include('_html_inc/page_footer.html')
+    @@include('_html_inc/page_footer.html')
 
 
-      <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
-    </body>
-  </html>
+  </body>
+</html>
