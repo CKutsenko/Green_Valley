@@ -30,4 +30,17 @@
     border: 2px solid @white;
     padding: 10px 30px;
   }
+
+  &--dotted {
+    background-color: transparent;
+    color: @gray-darker;
+    border-bottom: 1px solid transparent;
+    padding: 0;
+    border-radius: 0px;
+
+    &:hover {
+      border-bottom: 1px dashed @gray-darker;
+      background-color: transparent;
+    }
+  }
 }
