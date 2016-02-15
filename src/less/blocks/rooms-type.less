@@ -1,0 +1,41 @@
+.rooms-type {
+  background-color: @gray-lighter;
+  padding: 50px 0 35px;
+  text-align: center;
+  border-bottom: 1px solid @gray-light;
+
+  &__item-content {
+    background-color: @white;
+    border: 1px solid @gray-light;
+  }
+
+  &__title {
+    font-size: @font-size-base + 12px;
+    font-family: @serif-caption;
+    font-weight: normal;
+    color: @gray-darker;
+    margin: 30px 0 0 0;
+    line-height: 1.1;
+    text-decoration: none;
+
+    @media (min-width: @screen-sm) {
+      font-size: @font-size-base + 16px;
+    }
+
+    @media (min-width: @screen-lg) {
+      font-size: @font-size-base + 22px;;
+    }
+  }
+
+  &__cost {
+    text-transform: uppercase;
+    color: @gray-darker;
+    margin: 0 0 35px 0;
+    font-weight: bold;
+    text-decoration: none;
+
+    b {
+      color: @orange;
+    }
+  }
+}
