@@ -3,6 +3,7 @@
   text-align: center;
   background-color: @gray-lighter;
 
+
   &__content {
     margin: 0 auto;
   }
@@ -69,6 +70,12 @@
   &__item {
     margin-bottom: 50px;
     position: relative;
+
+    a {
+      width: 200px;
+      height: 200px;
+      font-size: 20px;
+    }
 
     @media (min-width: @screen-sm) {
       width: 25%;
@@ -139,6 +146,14 @@
     @media (min-width: @screen-lg) {
       width: 66%;
       margin-left: 17%;
+    }
+  }
+
+    &__tab-item {
+    display: none;
+
+    &--active {
+      display: flex;
     }
   }
 }

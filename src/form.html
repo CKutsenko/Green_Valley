@@ -87,107 +87,115 @@
 
         <section class="cottege-type">
           <div class="container">
-            <div class="cottege-type__content">
+            <div class="cottege-type__content cottege-type__tabs">
               <p class="cottege-type__step">Шаг 3</p>
               <h2 class="cottege-type__title">Тип коттеджа</h2>
-              <ul class="cottege-type__list">
+              <ul class="cottege-type__list cottege-type__tabs-list">
 
-                <li class="cottege-type__item">
-                  <input type="radio" checked name="type">
-                  <p class="cottege-type__item-text">Флагман</p>
-                  <span></span>
+                <li class="cottege-type__item cottege-type__tab-link cottege-type__tab-link--active">
+                  <a href="#tab_01">
+                    <input type="radio" checked name="type">
+                    <p class="cottege-type__item-text">Флагман</p>
+                    <span></span></a>
                 </li>
 
-                <li class="cottege-type__item">
-                  <input type="radio" name="type">
-                  <p class="cottege-type__item-text">Озерный</p>
-                  <span></span>
+                <li class="cottege-type__item cottege-type__tab-link">
+                  <a href="#tab_02">
+                    <input type="radio" name="type">
+                    <p class="cottege-type__item-text">Озерный</p>
+                    <span></span>
+                  </a>
                 </li>
 
-                <li class="cottege-type__item">
-                  <input type="radio" name="type">
-                  <p class="cottege-type__item-text">Портовый</p>
-                  <span></span>
+                <li class="cottege-type__item cottege-type__tab-link">
+                  <a href="#tab_03">
+                    <input type="radio" name="type">
+                    <p class="cottege-type__item-text">Портовый</p>
+                    <span></span>
+                  </a>
                 </li>
 
-                <li class="cottege-type__item">
-                  <input type="radio" name="type">
-                  <p class="cottege-type__item-text">Ольховка</p>
-                  <span></span>
+                <li class="cottege-type__item cottege-type__tab-link">
+                  <a href="#tab_04">
+                    <input type="radio" name="type">
+                    <p class="cottege-type__item-text">Ольховка</p>
+                    <span></span>
+                  </a>
                 </li>
               </ul>
 
-
-              <div class="cottege-type__features">
-                <div class="cottege-type__feature">
-                  <img src="img/form_squad-rule.png" alt=""><p>Площадь 100м<sup>2</sup></p></div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_door.png" alt=""><p>3 комнаты</p>
+              <div class="cottege-type__tabs-content">
+                <div class="cottege-type__features cottege-type__tab-item cottege-type__tab-item--active" id="tab_01">
+                  <div class="cottege-type__feature">
+                    <img src="img/form_squad-rule.png" alt=""><p>Площадь 100м<sup>2</sup></p></div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_door.png" alt=""><p>3 комнаты</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_bed.png" alt=""><p>5 спальных мест</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_bathroom.png" alt=""><p>Раздельный санузел</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_wifi.png" alt=""><p>wi-fi</p>
+                  </div>
                 </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_bed.png" alt=""><p>5 спальных мест</p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_bathroom.png" alt=""><p>Раздельный санузел</p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_wifi.png" alt=""><p>wi-fi</p>
-                </div>
-              </div>
-
-
-              <div class="cottege-type__features">
-                <div class="cottege-type__feature">
-                  <img src="img/form_squad-rule.png" alt=""><p>Площадь 220м<sup>2</sup></p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_door.png" alt=""><p>6 комнат</p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_bed.png" alt=""><p>7 спальных мест</p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_bathroom.png" alt=""><p>2 раздельных санузела</p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_wifi.png" alt=""><p>wi-fi</p>
-                </div>
-              </div>
-
-              <div class="cottege-type__features">
-                <div class="cottege-type__feature">
-                  <img src="img/form_squad-rule.png" alt=""><p>Площадь 50м<sup>2</sup></p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_door.png" alt=""><p>2 комнаты</p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_bed.png" alt=""><p>3 спальных места</p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_bathroom.png" alt=""><p>Совмещенный санузел</p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_wifi.png" alt=""><p>wi-fi</p>
-                </div>
-              </div>
 
 
-              <div class="cottege-type__features">
-                <div class="cottege-type__feature">
-                  <img src="img/form_squad-rule.png" alt=""><p>Площадь 150м<sup>2</sup></p>
+                <div class="cottege-type__features cottege-type__tab-item" id="tab_02">
+                  <div class="cottege-type__feature">
+                    <img src="img/form_squad-rule.png" alt=""><p>Площадь 220м<sup>2</sup></p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_door.png" alt=""><p>6 комнат</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_bed.png" alt=""><p>7 спальных мест</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_bathroom.png" alt=""><p>2 раздельных санузела</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_wifi.png" alt=""><p>wi-fi</p>
+                  </div>
                 </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_door.png" alt=""><p>4 комнаты</p>
+
+                <div class="cottege-type__features cottege-type__tab-item" id="tab_03">
+                  <div class="cottege-type__feature">
+                    <img src="img/form_squad-rule.png" alt=""><p>Площадь 50м<sup>2</sup></p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_door.png" alt=""><p>2 комнаты</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_bed.png" alt=""><p>3 спальных места</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_bathroom.png" alt=""><p>Совмещенный санузел</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_wifi.png" alt=""><p>wi-fi</p>
+                  </div>
                 </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_bed.png" alt=""><p>5 спальных мест</p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_bathroom.png" alt=""><p>Раздельный санузел</p>
-                </div>
-                <div class="cottege-type__feature">
-                  <img src="img/form_wifi.png" alt=""><p>wi-fi</p>
+
+
+                <div class="cottege-type__features cottege-type__tab-item" id="tab_04">
+                  <div class="cottege-type__feature">
+                    <img src="img/form_squad-rule.png" alt=""><p>Площадь 150м<sup>2</sup></p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_door.png" alt=""><p>4 комнаты</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_bed.png" alt=""><p>5 спальных мест</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_bathroom.png" alt=""><p>Раздельный санузел</p>
+                  </div>
+                  <div class="cottege-type__feature">
+                    <img src="img/form_wifi.png" alt=""><p>wi-fi</p>
+                  </div>
                 </div>
               </div>
 
@@ -232,48 +240,48 @@
               <h3 class="payment__title">Способ оплаты</h3>
               <div class="payment__form-wrapper">
 
-              <div class="payment__form">
-                <div class="payment__type">
+                <div class="payment__form">
+                  <div class="payment__type">
 
-                  <div class="payment__on-arrival">
-                    <div class="payment__on-arrival-explanation">
-                      <label for="payment-on-arrival">
-                        <input type="radio">
-                        <span class="payment__on-arrival-span">по приезду</span>
-                      </label>
-                      <p class="payment__on-arrival-text">Вы можете произвести оплату по факту заселения.</p>
-                    </div>
-                  </div>
-
-                  <div class="payment__now">
-                    <div class="payment__now-explanation">
-                      <label for="payment-now">
-                        <input type="radio">
-                        <span class="payment__now-span">сейчас</span>
-                      </label>
-                      <p class="payment__now-text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+                    <div class="payment__on-arrival">
+                      <div class="payment__on-arrival-explanation">
+                        <label for="payment-on-arrival">
+                          <input type="radio">
+                          <span class="payment__on-arrival-span">по приезду</span>
+                        </label>
+                        <p class="payment__on-arrival-text">Вы можете произвести оплату по факту заселения.</p>
+                      </div>
                     </div>
 
-                    <div class="payment__now-form">
-                      <label for="card-number">номер карты</label>
-                      <input type="text" placeholder="0000 0000 0000 0000">
-                      <label for="last-name">фамилия владельца карты</label>
-                      <input type="text" placeholder="vladimir vladimirovich">
-                      <label for="cvv">код cvv</label>
-                      <input type="text" placeholder="123">
-                      <label for="valid-until">действует до</label>
-                      <input type="text" placeholder="01/2018">
-                    </div>
+                    <div class="payment__now">
+                      <div class="payment__now-explanation">
+                        <label for="payment-now">
+                          <input type="radio">
+                          <span class="payment__now-span">сейчас</span>
+                        </label>
+                        <p class="payment__now-text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+                      </div>
 
+                      <div class="payment__now-form">
+                        <label for="card-number">номер карты</label>
+                        <input type="text" placeholder="0000 0000 0000 0000">
+                        <label for="last-name">фамилия владельца карты</label>
+                        <input type="text" placeholder="vladimir vladimirovich">
+                        <label for="cvv">код cvv</label>
+                        <input type="text" placeholder="123">
+                        <label for="valid-until">действует до</label>
+                        <input type="text" placeholder="01/2018">
+                      </div>
+
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="payment__cost">
+                <div class="payment__cost">
                   <p class="payment-cost__title">к оплате</p>
                   <p class="payment-cost__sum"></p>
                   <p class="payment-cost__warning">Пожалуйста, <span>выберите дату</span> выезда и въезда, чтобы увидеть сумму к оплате</p>
-              </div>
+                </div>
 
 
               </div>
