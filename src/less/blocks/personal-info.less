@@ -2,7 +2,7 @@
   padding: 50px 0;
   text-align: center;
 
-  &__contant {
+  &__content {
     margin: 0 auto;
   }
 
@@ -26,8 +26,11 @@
   }
 
   &__form {
-    width: 66%;
     display: inline-block;
+
+    @media (min-width: @screen-lg) {
+      width: 66%;
+    }
   }
 
   &__input-wrapper {

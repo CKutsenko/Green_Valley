@@ -17,6 +17,7 @@
     font-family: @fira-sans;
     font-size: @font-size-base;
     position: relative;
+    padding: 0 15px;
 
     &:hover {
       color: @orange;
@@ -47,7 +48,15 @@
     }
   }
 
-  &_list {
+  &__type {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__list {
    left: 13%;
   }
 
@@ -121,3 +130,5 @@
     }
   }
 }
+
+

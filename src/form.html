@@ -199,7 +199,7 @@
 
         <section class="personal-info">
           <div class="container">
-            <div class="personal-info_contant">
+            <div class="personal-info_content">
 
               <p class="personal-info__step">Шаг 4</p>
               <h2 class="personal-info__title">Персональная информация</h2>
@@ -232,36 +232,29 @@
               <h3 class="payment__title">Способ оплаты</h3>
               <div class="payment__form-wrapper">
 
-                <div class="payment-cost">
-                  <p class="payment-cost__title">к оплате</p>
-                  <p class="payment-cost__sum"></p>
-                  <p class="payment-cost__warning">Пожалуйста, <span>выберите дату</span> выезда и въезда, чтобы увидеть сумму к оплате</p>
-                </div>
-              </div>
-
               <div class="payment__form">
-                <div class="payment-type">
+                <div class="payment__type">
 
-                  <div class="payment-on-arrival">
-                    <div class="payment-on-arrival__explanation">
+                  <div class="payment__on-arrival">
+                    <div class="payment__on-arrival-explanation">
                       <label for="payment-on-arrival">
                         <input type="radio">
-                        <span class="payment-on-arrival__choose">по приезду</span>
+                        <span class="payment__on-arrival-span">по приезду</span>
                       </label>
-                      <p class="payment-on-arrival__text">Вы можете произвести оплату по факту заселения.</p>
+                      <p class="payment__on-arrival-text">Вы можете произвести оплату по факту заселения.</p>
                     </div>
                   </div>
 
-                  <div class="payment-now">
-                    <div class="payment-now__explanation">
+                  <div class="payment__now">
+                    <div class="payment__now-explanation">
                       <label for="payment-now">
                         <input type="radio">
-                        <span class="payment-now__choose">сейчас</span>
+                        <span class="payment__now-span">сейчас</span>
                       </label>
-                      <p class="payment-now__text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+                      <p class="payment__now-text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
                     </div>
 
-                    <div class="payment-now__form">
+                    <div class="payment__now-form">
                       <label for="card-number">номер карты</label>
                       <input type="text" placeholder="0000 0000 0000 0000">
                       <label for="last-name">фамилия владельца карты</label>
@@ -274,6 +267,15 @@
 
                   </div>
                 </div>
+              </div>
+
+              <div class="payment__cost">
+                  <p class="payment-cost__title">к оплате</p>
+                  <p class="payment-cost__sum"></p>
+                  <p class="payment-cost__warning">Пожалуйста, <span>выберите дату</span> выезда и въезда, чтобы увидеть сумму к оплате</p>
+              </div>
+
+
               </div>
 
               <a class="btn__green--wade">Забронировать</a>
