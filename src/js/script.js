@@ -1,39 +1,38 @@
-// $(document).ready(function(){
+$(document).ready(function(){
 
-  // var  owl = $('.photogalley__thumbs'),
-  // galleryItemIndex;
-  // owl.owlCarousel({
-  //   center: true,
-  //   items: 5,
-  //   // loop: true,
-  //   stagePadding: 50,
-  //   merge: true,
-  // }).find('a').on('click', function(e){
-  //   e.preventDefault();
-  //   $(this).closest('.photogalley')
-  //   .find('.photogallery__main-img')
-  //   .attr('src', (this).attr('href'));
-  //   owl.trigger('to.owl.carousel', $(this).parent().index());
-  // });
+  var owl = $('.gallery__thumbs'),
+      galleryItemIndex;
+  owl.owlCarousel({
+    center: true,
+    items: 5,
+    loop: true,
+    stagePadding: 50,
+    merge: true,
+  }).find('a').on('click', function(e){
+    e.preventDefault();
+    $(this).closest('.gallery').find('.gallery__main-img').attr('src', $(this).attr('href'));
+    galleryItemIndex = $(this).closest('.owl-item').index();
+    console.log(galleryItemIndex);
+    owl.trigger('to.owl.carousel', galleryItemIndex);
+  });
 
-// });
 
-var tabs = document.querySelectorAll(".tabs a");
-var contents = document.querySelectorAll(".tab-content .content");
+  var link_href;
+  $('.features__tab').on('click', function(e){
+    e.preventDefault();
+    $(this)
+    .closest('.features__tabs-list')
+    .find('.features__tab.features__tab--active')
+    .removeClass('features__tab--active');
+    $(this)
+    .closest('.features__tab')
+    .addClass('features__tab--active');
+    $(this)
+    .closest('.features__tabs')
+    .find('.features__type.features__type--active')
+    .removeClass('features__type--active');
+    link_href = $(this).attr('href');
+    $(link_href).addClass('features__type--active');
+  });
 
-function changeTab(){
-  for (var i=0;i<tabs.length;i++) {
-    tabs[i].parentNode.classList.remove("tab-active");
-  }
-  this.parentNode.classList.add("tab-active");
-
-  for (i=0;i<contents.length;i++) {
-    contents[i].classList.remove("content-active");
-  }
-  var link = this.getAttribute("href");
-  document.querySelector(link).classList.add("content-active");
-}
-
-for (var i=0;i<tabs.length;i++){
-  tabs[i].addEventListener('click', changeTab);
-}
+});
