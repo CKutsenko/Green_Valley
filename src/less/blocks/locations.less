@@ -29,17 +29,75 @@
   &__list {
     display: inline-block;
     border: 1px solid #ebebeb;
+    padding: 25px 0 45px;
     font-size: 0;
-    padding: 25px 0;
-    padding-bottom: 48px;
-    width: 33%;
+    width: 100%;
+
+    @media (min-width: @screen-sm) {
+      width: 50%;
+    }
+
+    @media (min-width: @screen-lg) {
+      width: 38%;
+    }
   }
 
-  &__item {
+  &__cottage,
+  &__hotel {
     width: 50%;
 
-    :first-child {
-      border-right: 1px solid @gray-light;
+    &--text {
+      text-transform: uppercase;
+      font-size: @font-size-base;
+      padding: 0;
     }
+
+    input {
+      width: 82px;
+      height: 64px;
+      visibility: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    input:before {
+      content: '';
+      position: absolute;
+      width: 82px;
+      height: 64px;
+      background-image: url(../img/form_hotel.png);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      visibility: visible;
+      opacity: .6;
+    }
+
+    input:checked:before,
+    input:checked:after  {
+      opacity: 1;
+    }
+
+    input:after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 12px;
+      background-image: url(../img/form_check.png);
+      top: 80px;
+      left: 50%;
+      opacity: 0;
+    }
+  }
+
+  &__cottage {
+    input:before {
+      background-image: url(../../img/form_cottage.png);
+    }
+  }
+
+  &__hotel {
+    border-right: 1px solid @gray-light;
   }
 }

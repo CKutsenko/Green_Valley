@@ -38,13 +38,15 @@
   &__departure {
     padding: 20px 15px;
     position: relative;
+    font-size: 0;
 
-    label {
+    p {
       text-transform: uppercase;
       position: absolute;
-      bottom: 65px;
+      bottom: 45px;
       left: 0;
       right: 0;
+      font-size: @font-size-base;
     }
 
     input {
@@ -61,6 +63,12 @@
       padding: 5px 10px;
       text-align: center;
       background-color: #fff;
+      font-size: @font-size-base;
+    }
+
+    :nth-child(1),
+    :nth-child(2) {
+      border-right: 0;
     }
   }
 

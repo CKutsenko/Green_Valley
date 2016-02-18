@@ -1,0 +1,18 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "",
+  "authors": [
+    "CKutsenko <kate040491@mail.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/CKutsenko/Green_Valley",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
