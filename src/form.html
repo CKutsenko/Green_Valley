@@ -232,8 +232,66 @@
         </section>
 
         <!-- STEP #5 -->
+            <section class="payment">
+      <div class="payment__inner">
+        <header class="step">Шаг 5</header>
+        <h2 class="payment__title">Способ оплаты</h2>
+        <div class="pay">
+          <div class="pay__wrapper">
+            <div class="pay__later">
+              <label class="pay__choise" for="later">
+                <input type="radio" name="pay" id="later">
+                <h4 class="pay__title">По приезду</h4>
+                <p class="pay__text">Вы можете произвести оплату по факту заселения</p>
+              </label>
+            </div>
+            <div class="pay__now">
+              <label class="pay__choise" for="now">
+                <input type="radio" name="pay" id="now" checked>
+                <h4 class="pay__title">Сейчас</h4>
+                <p class="pay__text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+              </label>
+              <div class="card-info">
+                <div class="card-info__wrapper">
+                  <label class="card-info__field">
+                    <span>Номер карты</span>
+                    <input type="text" class="card-info__input" name="card-number" placeholder="0000-0000-0000-0000">
+                  </label>
+                  <label class="card-info__field">
+                    <span>Фамилия владельца карты</span>
+                    <input type="text" class="card-info__input" name="card-holder" placeholder="VLADIMIR VLADIMIROV">
+                  </label>
+                </div>
+                <div class="card-info__wrapper--short">
+                  <label class="card-info__field  card-info__field--short">
+                    <span>Код CVV</span>
+                    <input type="text" class="card-info__input" name="cvv-code" id="cvv-code" placeholder="123">
+                  </label>
+                  <label class="card-info__field  card-info__field--short">
+                    <span>Действует до</span>
+                    <input type="text" class="card-info__input" name="valid-until" placeholder="01/2018">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bill">
+            <h3>К оплате</h3>
+            <div class="bill__charge">15000 рублей</div>
+          </div>
+          <div class="bill  bill--false">
+            <h3>К оплате</h3>
+            <div class="bill__charge">-</div>
+            <div class="bill__annotation">Пожалуйста, <a href="" class="dashed">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате.</div>
+          </div>
+        </div>
+        <div class="payment__button">
+          <button class="btn  btn--green  btn--wide">Забронировать</button>
+        </div>
+      </div>
+    </section>
 
-        <section class="payment">
+<!--         <section class="payment">
           <div class="container">
             <div class="payment_contant">
               <p class="payment__step">Шаг 5</p>
@@ -289,7 +347,8 @@
               <a class="btn__green--wade">Забронировать</a>
             </div>
           </div>
-        </section>
+        </section> -->
+
       </form>
 
     </main>
