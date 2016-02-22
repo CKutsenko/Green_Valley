@@ -46,6 +46,13 @@ $(".offers__slider").owlCarousel({
       items: 1,
   });
 
+  $('.cottages__input').on('click', function() {
+    var idInput = $(this).attr('id');
+    var idBlock = '#house-description--'+idInput;
+    $('.house-description').hide();
+    $(idBlock).show();
+  });
+
 
   var link_href;
   $('.features__tab').on('click', function(e){
