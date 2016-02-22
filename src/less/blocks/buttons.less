@@ -22,7 +22,7 @@
   &--icon-calendar:before {
     position: absolute;
     content: '';
-    background-image: url(../../img/calendar.svg);
+    background-image: url(../img/calendar.svg);
   }
 
   &--bordered {
@@ -41,6 +41,21 @@
     &:hover {
       border-bottom: 1px dashed @gray-darker;
       background-color: transparent;
+    }
+  }
+
+  &--wide {
+    width: 100%;
+    border-radius: 0;
+    padding-top: 15px;
+    padding-bottom: 13px;
+  }
+
+  &--green {
+  background-color: @main-green;
+
+  &:hover {
+    background-color: @main-green;
     }
   }
 }

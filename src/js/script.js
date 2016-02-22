@@ -53,6 +53,11 @@ $(".offers__slider").owlCarousel({
     $(idBlock).show();
   });
 
+    $('#menu_trigger').click(function(e){
+    e.preventDefault();
+    $('#additional-menu').slideToggle('slow');
+  });
+
 
   var link_href;
   $('.features__tab').on('click', function(e){

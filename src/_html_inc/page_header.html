@@ -1,37 +1,36 @@
-    <header class="page-header">
-      <div class="container">
-        <div class="row">
+<header class="page-header">
 
-          <div class="col-xs-10 col-lg-2">
-            <a href="index.html" class="logo"><img src="img/Logo.png" alt="logo"></a>
-          </div>
-
-          <div class=" hidden-xs hidden-sm col-lg-4">
-            <nav class="main-nav">
-              <a href="" id="menu_trigger"  class="hamburger  hidden-lg"><span></span></a>
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><a href="room_list.html" class="main-nav__link">Номера</a></li>
-                <li class="main-nav__item"><a href="single_room.html" class="main-nav__link">Коттедж</a></li>
-                <li class="main-nav__item"><a href="" class="main-nav__link">Ресторан</a></li>
-                <li class="main-nav__item"><a href="" class="main-nav__link">Отдых</a></li>
-                <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="hidden-xs hidden-sm col-lg-4">
-            <div class="page-header__contacts">
-              <strong class="page-header__phone">+7 812 777-55-88</strong>
-              <p class="page-header__adress">г. Санкт-Петербург, Приморское ш.600</p>
-            </div>
-          </div>
-
-          <div class="page-header__btn hidden-xs hidden-sm col-lg-2">
-            <a href="form.html" class="btn btn--icon-calendar">Забронировать</a>
-          </div>
-        </div>
-
-        <div class="hamburger hidden-lg"></div>
-
+  <div class="container">
+    <div class="page-header__inner  row">
+      <div class="page-header__logo  col-xs-12  col-lg-2">
+        <a href="index.html"><img src="img/Logo.png"></a>
       </div>
-    </header>
+      <nav class="main-nav">
+        <a href="" id="menu_trigger"  class="hamburger  hidden-lg"><span></span></a>
+        <ul class="main-nav__list visible-lg-block">
+          <li class="main-nav__item"><a href="room_list.html" class="main-nav__link">Номера</a></li>
+          <li class="main-nav__item"><a href="single_room.html" class="main-nav__link">Коттедж</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Отдых</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="page-header__contacts col-lg-3 visible-lg-block"><strong>+7 812 777-55-88</strong><span>г.Санкт-Петербург, Приморское ш.600</span></div>
+      <div class="page-header__button col-lg-2 visible-lg-block">
+        <div class="page-header__button--inner">
+          <a href="form.html" class="btn btn--icon-calendar">Забронировать</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="hamburger-opened hidden-lg" id="additional-menu">
+    <li class="hamburger-opened__item"><a href="room_list.html" class="main-nav__link">Номера</a></li>
+    <li class="hamburger-opened__item"><a href="single_room.html" class="main-nav__link">Коттедж</a></li>
+    <li class="hamburger-opened__item"><a href="#" class="main-nav__link">Ресторан</a></li>
+    <li class="hamburger-opened__item"><a href="#" class="main-nav__link">Отдых</a></li>
+    <li class="hamburger-opened__item"><a href="#" class="main-nav__link">Контакты</a></li>
+  </ul>
+
+</header>

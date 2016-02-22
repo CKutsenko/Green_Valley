@@ -1,48 +1,160 @@
-.logo {
+.page-header{
+  width: 100%;
 
+  &__inner{
+    position: relative;
+  }
+
+  &__logo{
+    padding-top: 18px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    @media (min-width: @screen-lg) {
+    text-align: left;
+    }
+  }
 }
 
 .main-nav{
-  &__item{
     display: inline-block;
-    text-transform: uppercase;
-    padding: 0 1px;
-  }
 
   &__list {
-    padding: 0;
+    margin-top: 35px;
+    margin-left: -15px;
   }
 
-  &__item a {
+  &__item {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 12px;
+  }
+
+  &__link {
     text-decoration: none;
     color: @gray-darker;
-    font-size: 14px;
-    font-family: @fira-sans;
-    font-weight: 500;
-  }
 
-  &__item a:hover {
-    color: @orange;
+    &:hover {
+      color: @orange;
+    }
+
+    &--underline {
+      position: relative;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background-color: @orange;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -5px;
+      }
+    }
+
+    &--underline-double {
+      position: relative;
+
+      &:before, &:after {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background-color: @orange;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+      }
+
+      &:before {
+        bottom: -5px;
+      }
+
+      &:after
+      {
+        bottom: -10px;
+      }
+    }
   }
 }
 
-.page-header {
+.hamburger {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 
-  padding: 15px 0;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: @orange;
 
-  &__phone {
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 4px;
+      background-color: @orange;
+    }
+
+    &:before {
+      transform: translateY(-250%);
+    }
+
+    &:after {
+      transform: translateY(150%);
+    }
+  }
+}
+
+.page-header__contacts {
+  strong {
+    display: block;
     font-family: @sans-caption;
-    font-size: 18px;
     font-weight: bold;
+    padding-top: 25px;
   }
 
-  &__adress {
-    font-family: @fira-sans;
-    font-size: 14px;
-    margin-top: 7px;
+  span {
+    display: block;
+    padding-top: 5px;
   }
+}
 
-  &__btn{
-    margin-top: 12px;
+
+.page-header__button {
+  margin-left: 15px;
+  padding-top: 27px;
+
+  &--inner {
+    padding-left: 40px;
   }
+}
+
+
+.hamburger-opened {
+  display: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  line-height: 3.57em;
+}
+
+.hamburger-opened__item {
+  display: block;
+  width: 100%;
+  border: 1px solid @gray-lighter;
+  margin-top: -1px;
 }
