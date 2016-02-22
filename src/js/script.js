@@ -5,15 +5,14 @@ $(document).ready(function(){
   owl.owlCarousel({
     center: true,
     loop: true,
-    stagePadding: 50,
-    merge: true,
     responsive: {
     0 : {
        items: 1,
     },
-    // breakpoint from 480 up
     480 : {
        items: 5,
+       stagePadding: 50,
+       merge: true,
     }
   }
   }).find('a').on('click', function(e){
