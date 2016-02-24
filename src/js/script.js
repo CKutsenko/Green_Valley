@@ -70,19 +70,18 @@ $(document).ready(function(){
     $('#additional-menu').slideToggle('slow');
   });
 
-  $("#mainform").submit(function(){ // пeрeхвaтывaeм всe при сoбытии oтпрaвки
-    var form = $(this); // зaпишeм фoрму, чтoбы пoтoм нe былo прoблeм с this
-    var error = false; // прeдвaритeльнo oшибoк нeт
-    form.find('input, textarea').each( function(){ // прoбeжим пo кaждoму пoлю в фoрмe
-      if ($(this).val() == '') { // eсли нaхoдим пустoe
-        $(this).addClass("error");
-        error = true; // oшибкa
-      } else { // если пол не пустое
-        $(this).removeClass("error"); // снимаем класс
-        error = false; // сбрасываем ошибку
-      }
-    });
-
+    // $('#mainform').submit(function(){ // пeрeхвaтывaeм всe при сoбытии oтпрaвки
+    // var form = $(this); // зaпишeм фoрму, чтoбы пoтoм нe былo прoблeм с this
+    // var error = false; // прeдвaритeльнo oшибoк нeт
+    // form.find('input, textarea').each( function(){ // прoбeжим пo кaждoму пoлю в фoрмe
+    //   if ($(this).val() == '') { // eсли нaхoдим пустoe
+    //     $(this).addClass("error");
+    //     error = true; // oшибкa
+    //   } else { // если пол не пустое
+    //     $(this).removeClass("error"); // снимаем класс
+    //     error = false; // сбрасываем ошибку
+    //   }
+    // });
 
     var link_href;
     $('.features__tab').on('click', function(e){
@@ -105,6 +104,6 @@ $(document).ready(function(){
     lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true
-    })
+    });
 
   });
