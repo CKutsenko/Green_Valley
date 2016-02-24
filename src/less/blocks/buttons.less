@@ -37,9 +37,10 @@
   &--dotted {
     background-color: transparent;
     color: @gray-darker;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0);
     padding: 0;
     border-radius: 0px;
+    transition: ease-in-out all 500ms;
 
     &:hover {
       border-bottom: 1px dashed @gray-darker;
