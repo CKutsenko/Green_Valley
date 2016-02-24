@@ -10,9 +10,13 @@ $(document).ready(function(){
        items: 1,
     },
     480 : {
-       items: 5,
-       stagePadding: 50,
-       merge: true,
+       items: 2,
+    },
+
+    768 : {
+      items: 5,
+      stagePadding: 50,
+      merge: true,
     }
   }
   }).find('a').on('click', function(e){
@@ -31,18 +35,27 @@ $(".room-info__slider").owlCarousel({
       items: 1,
   });
 
-$(".review-carousel").owlCarousel({
-      center: true,
-     loop: true,
-      merge: true,
-      items: 2,
-  });
 
 $(".offers__slider").owlCarousel({
       center: true,
      loop: true,
       merge: true,
       items: 1,
+  });
+
+$(".review-carousel").owlCarousel({
+    loop: true,
+    merge: true,
+    nav: true,
+    navText: false,
+    responsive: {
+      0 : {
+        items: 1,
+      },
+      768 : {
+       items: 2,
+    }
+  }
   });
 
   $('.cottages__input').on('click', function() {
